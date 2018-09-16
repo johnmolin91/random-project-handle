@@ -12,4 +12,10 @@ router.get("/players", function(req,res) {
     });
 });
 
+router.get("/players", function(req,res) {
+    player.schedule(function(scheduleData) {
+        res.render("index", { schedule_data: scheduleData });
+    });
+});
+
 module.exports = router;
