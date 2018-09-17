@@ -7,7 +7,7 @@ var player = {
         });
     },
     schedule: function(cb) {
-        orm.schedule("players", function(res) {
+        orm.schedule("schedule", function(res) {
             cb(res);
         });
     }
