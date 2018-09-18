@@ -4,7 +4,8 @@ var connection = mysql2.createConnection({
     host: "localhost",
     user: "root",
     password: "root",
-    database: "nba2018scheduledb"
+    database: "nba2018scheduledb",
+    multipleStatements: true
 });
 
 connection.connect(function(err) {

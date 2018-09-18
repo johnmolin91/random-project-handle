@@ -7,23 +7,16 @@
             <div class="row">
                 {{#each player_data }}
                     <div class="col-xs-8 text-right">
-                         {{playersAdvanced.Player}}
+                         {{this.Player}}
                     </div>
                     <div class="col-xs-4 text-left">
-                        {{!-- {{this.rawAdv}} --}}
+                        {{this.rawAdv}}
+                    </div>
+                    <div class="col-xs-2 text-right">
+                        {{this.visitorTeam}}
                     </div>
                 {{/each}}
             </div>
         </div>
-        {{!-- <div class="col-xs-4 text-center">
-            <div class="row">
-                {{#each schedule_data}}
-                    <div class="col-xs-12 text-center">
-                        {{this.visitorTeam}}
-                        {{this.homeTeam}}
-                    </div>
-                {{/each}}
-	        </div>
-        </div> --}}
     </div>
 </div>
