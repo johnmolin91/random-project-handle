@@ -4,6 +4,7 @@ h1 {
 
 .tableSet, th, td {
     border: 2px solid;
+    margin: 5px;
     padding: 2px;
 }
 
@@ -13,5 +14,6 @@ h1 {
 
 .explanation {
     font-size: 24px;
+    margin: 5px;
     padding: 2px;
 }
