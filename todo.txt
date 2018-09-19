@@ -1,0 +1,6 @@
+-design the page to look nicer
+-show schedule for the day
+-be able to sort players by teams
+-have a navbar, drop down menus, show/hide functions
+-have a nba twitter news sidebar
+-vs. team defense weighting
