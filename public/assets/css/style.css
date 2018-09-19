@@ -1,3 +1,17 @@
-#playerStats {
-    display: none;
+h1 {
+    font-weight: bold;
+}
+
+.tableSet, th, td {
+    border: 2px solid;
+    padding: 2px;
+}
+
+.dataProp {
+    float: left;
+}
+
+.explanation {
+    font-size: 24px;
+    padding: 2px;
 }

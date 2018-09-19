@@ -1,11 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 text-center" id="top-bar">
-            <h1>Fantasy Edge Player Sorting</h1>
+            <h1>NBA Fantasy Edge Player Sorting</h1>
         </div>
-        <div class="col-xs-12">
+        <div class="col-xs-6 dataProp">
             <div class="row">
-                {{#each player_data }}
+                {{!-- {{#each player_data }}
                     <div class="row">
                         <div class="col-xs-12 text-center" id="playerStats">
                             <div class="col-xs-8 text-center">
@@ -16,9 +16,23 @@
                             </div>
                         </div>
                     </div>
-                {{/each}}
-                <button type="button" class="btn btn-primary playerButton" id="text-enter-button">Show players</button>
-                {{#each player_data }}
+                {{/each}} --}}
+                <table class="tableSet">
+                    <thead>
+                        <th>Player Name</th>
+                        <th>Raw Score</th>
+                    </thead>
+                    <tbody>
+                        {{#each player_data}}
+                        <tr>
+                        <td>{{this.Player}}</td>
+                        <td>{{this.rawAdv}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                {{!-- <button type="button" class="btn btn-primary playerButton" id="text-enter-button">Show players</button> --}}
+                {{!-- {{#each player_data }}
                     <div class="row gameSchedule">
                         <div class="col-xs-12 text-center">
                             <div class="col-xs-3 text-right">
@@ -35,8 +49,13 @@
                             </div>
                         </div>
                     </div>
-                {{/each}}
-                <button type="button" class="btn btn-primary scheduleButton" id="text-enter-button">Show Schedule</button>
+                {{/each}} --}}
+                {{!-- <button type="button" class="btn btn-primary scheduleButton" id="text-enter-button">Show Schedule</button> --}}
+            </div>
+        </div>
+        <div class="col-xs-6 explanation">
+            <div class="row">
+                Hi! Welcome to NBA Fantasy Edge. This website is about predicting 
             </div>
         </div>
     </div>
