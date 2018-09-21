@@ -1,3 +1,5 @@
+upload to AWS (when doing this, leave out the .git file)
+
 -design the page to look nicer
 -show schedule for the day
 -be able to sort players by teams

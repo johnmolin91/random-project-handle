@@ -1,63 +1,65 @@
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 text-center" id="top-bar">
+        <div class="col-md-12 text-center" id="top-bar">
             <h1>NBA Fantasy Edge Player Sorting</h1>
         </div>
-        <div class="col-xs-5 dataProp">
-            <div class="row">
-                {{!-- {{#each player_data }}
-                    <div class="row">
-                        <div class="col-xs-12 text-center" id="playerStats">
-                            <div class="col-xs-8 text-center">
-                                {{this.Player}}
-                            </div>
-                            <div class="col-xs-4 text-center">
-                                {{this.rawAdv}}
-                            </div>
-                        </div>
-                    </div>
-                {{/each}} --}}
-                <table class="tableSet">
-                    <thead>
-                        <th>Player Name</th>
-                        <th>Raw Score</th>
-                    </thead>
-                    <tbody>
-                        {{#each player_data}}
-                        <tr>
-                        <td>{{this.Player}}</td>
-                        <td>{{this.rawAdv}}</td>
-                        </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-                {{!-- <button type="button" class="btn btn-primary playerButton" id="text-enter-button">Show players</button> --}}
-                {{!-- {{#each player_data }}
-                    <div class="row gameSchedule">
-                        <div class="col-xs-12 text-center">
-                            <div class="col-xs-3 text-right">
-                                {{this.gameid}}
-                            </div>
-                            <div class="col-xs-3 text-right">
-                                {{this.dateGame}}
-                            </div>
-                            <div class="col-xs-3 text-right">
-                                {{this.visitorTeam}}
-                            </div>
-                            <div class="col-xs-3 text-right">
-                                {{this.homeTeam}}
+        <div class="col-md-12 text-center mainBody">
+            <div class="col-md-5 dataProp">
+                <div class="row">
+                    {{!-- {{#each player_data }}
+                        <div class="row">
+                            <div class="col-xs-12 text-center" id="playerStats">
+                                <div class="col-xs-8 text-center">
+                                    {{this.Player}}
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    {{this.rawAdv}}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                {{/each}} --}}
-                {{!-- <button type="button" class="btn btn-primary scheduleButton" id="text-enter-button">Show Schedule</button> --}}
+                    {{/each}} --}}
+                    <table class="tableSet">
+                        <thead>
+                            <th>Player Name</th>
+                            <th>Raw Score</th>
+                        </thead>
+                        <tbody>
+                            {{#each player_data}}
+                            <tr>
+                            <td>{{this.Player}}</td>
+                            <td>{{this.rawAdv}}</td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                    {{!-- <button type="button" class="btn btn-primary playerButton" id="text-enter-button">Show players</button> --}}
+                    {{!-- {{#each player_data }}
+                        <div class="row gameSchedule">
+                            <div class="col-xs-12 text-center">
+                                <div class="col-xs-3 text-right">
+                                    {{this.gameid}}
+                                </div>
+                                <div class="col-xs-3 text-right">
+                                    {{this.dateGame}}
+                                </div>
+                                <div class="col-xs-3 text-right">
+                                    {{this.visitorTeam}}
+                                </div>
+                                <div class="col-xs-3 text-right">
+                                    {{this.homeTeam}}
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}} --}}
+                    {{!-- <button type="button" class="btn btn-primary scheduleButton" id="text-enter-button">Show Schedule</button> --}}
+                </div>
             </div>
-        </div>
-        <div class="col-xs-5 explanation">
-            <div class="row">
-                Hi! Welcome to NBA Fantasy Edge. The purpose of this website is to predict which players are going to perform the best on a day-to-day basis. The raw score you see next to each players' name is based on a predictive model I've created that is based on the players' previous per-game statistics and advanced analytics. The players you see are of those who are on teams playing on opening night (October 16, 2018).
-                <br><br>
-                This website features many different languages. The data that I pulled all the stats from is based off of <a href="www.basketball-reference.com">www.basketball-reference.com's</a> page and is stored in a mysql database. To access those stats I used an express server in node.js. The design of the page was done using handlebars. All of this is done using the MVC framework of organizing code.
+            <div class="col-md-5 explanation">
+                <div class="row">
+                    Hi! Welcome to NBA Fantasy Edge. The purpose of this website is to predict which players are going to perform the best on a day-to-day basis. The raw score you see next to each players' name is based on a predictive model I've created that is based on the players' previous per-game statistics and advanced analytics. The players you see are of those who are on teams playing on opening night (October 16, 2018), based off of their regular season stats from the 2017-2018 season.
+                    <br><br>
+                    This website features many different languages. The data that I pulled all the stats from is based off of <a href="www.basketball-reference.com">www.basketball-reference.com's</a> page and is stored in a mysql database. To access those stats I used an express server in node.js. The design of the page was done using handlebars. All of this is done using the MVC framework of organizing code, and is hosted on Amazon Web Services.
+                </div>
             </div>
         </div>
     </div>

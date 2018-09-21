@@ -1,8 +1,16 @@
+.mainBody {
+    background-color: maroon;
+    background-size: cover;
+}
+
 h1 {
-    font-weight: bold;
+    font: 48px arial bold;
+    background-color: orange;
 }
 
 .tableSet, th, td {
+    font: 16px Arial;
+    color: greenyellow;
     border: 2px solid;
     margin: 5px;
     padding: 2px;
@@ -13,6 +21,7 @@ h1 {
 }
 
 .explanation {
+    color: white;
     font-size: 24px;
     margin: 5px;
     padding: 2px;
