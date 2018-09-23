@@ -1,4 +1,5 @@
-var orm = require("../config/orm.js");
+var orm = require("../config/ormAWS.js");
+// var orm = require("../config/orm.js");
 
 var player = {
     all: function(cb) {
